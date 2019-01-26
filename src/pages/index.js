@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { Spring } from 'react-spring'
+import { Spring, config } from 'react-spring'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -12,7 +12,10 @@ class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <h1>Hi, people</h1>
+        <Spring>
+          <h1>Hi, people</h1>
+
+        </Spring>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
