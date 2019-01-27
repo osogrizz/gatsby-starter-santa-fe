@@ -11,7 +11,11 @@ const Wrapper = styled.div`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1420;
-  padding: 1.45rem 1.0875rem;
+  margin: 0 auto;
+  height: 65px;
+  padding-top: 1rem ;
+  font-size: 0.9rem;
+
   
   a {
     margin-right: 20px;
@@ -35,7 +39,7 @@ class Header extends Component {
         </Link>
 
         <Link to="/contact">
-          Contact
+          Contact Us
         </Link>
                 
       </Container>
