@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const PreHeader = () => (
     <Wrapper> 
-        <p>tel 30303030330303</p>
+        <p>tel 310 980 8849</p>
     </Wrapper>
 )
 
