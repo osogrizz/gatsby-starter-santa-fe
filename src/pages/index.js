@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import { Spring, config } from 'react-spring'
 import styled from 'styled-components'
 
@@ -7,14 +7,13 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import BagImage from '../components/bag-image'
 import SEO from '../components/seo'
-import { delay } from 'q';
 
 const Wrapper = styled.div`
   display: grid;
   text-align: center;
 
 `
-const BagImgStyles = styled.div`
+const BagContainer = styled.div`
   border: 8px solid rgb(243, 235, 222);
 `
 
@@ -43,10 +42,10 @@ class IndexPage extends Component {
 
           <p>A BAG SHOULD BE A SCULPTURE BEFORE ANYTHING ELSE</p>
 
-          <BagImgStyles style={{  margin: `0 auto`, maxWidth: `660px`,maxHeight: `500px`, marginBottom: `1.45rem` }}>
+          <BagContainer style={{  margin: `0 auto`, maxWidth: `660px`,maxHeight: `500px`, marginBottom: `1.45rem` }}>
             <BagImage />
-          </BagImgStyles>
-      <Link to="/contact/">Contact</Link>
+          </BagContainer>
+
     </Layout>
     </Wrapper>
     )
