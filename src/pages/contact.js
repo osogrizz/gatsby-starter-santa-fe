@@ -11,23 +11,38 @@ const FormContainer = styled.div`
   max-width: 700px;
   grid-template-columns: 1fr;
   text-align: center;
+  align-content: center;
+`
+
+const InputStyles = styled.input`
+  height: 50px;
+  margin: 10px;
+
+`
+
+const Btn = styled.button`
+  margin: 20px auto;
+  border-radius: 40px;
+  border-color: #222;
+  padding: 5px;
+  width: 90px;
 `
 
 const Contact = () => (
   <Layout>
       <SEO title="Contact" />
       
-      <form action="">
+      <form action="#">
         <FormContainer>
 
-        <input type="name" placeholder="Name"/>
+        <InputStyles type="name" placeholder="Name"/>
 
 
-        <input type="email" placeholder="Email"/>
+        <InputStyles type="email" placeholder="Email"/>
 
-        <textarea name="" id="" cols="30" rows="10">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message">
         </textarea>
-        <button type="submit">Send</button>
+        <Btn type="submit">Send</Btn>
       </FormContainer>  
       </form>
     </Layout>
