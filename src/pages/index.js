@@ -69,9 +69,7 @@ class IndexPage extends Component {
             <BagImage />
           </BagContainer>
 
-
-
-    </Layout>
+      </Layout>
     </Wrapper>
     )
   }

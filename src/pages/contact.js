@@ -55,6 +55,8 @@ const LogoContainer = styled.div`
 `
 
 const FooterStyles = styled.footer`
+  margin: 0 auto;
+  max-width: 950px;
   font-size: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +103,9 @@ const Contact = () => (
                 <p>tel. 310 980 8849</p>
                 
             </Wrapper>   
-        <hr/> 
+            <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+              <hr /> 
+            </div>
         <FooterStyles>
             <div>
               Copyright © {new Date().getFullYear()}, Von Ruhtenberg - All Rights Reserved
