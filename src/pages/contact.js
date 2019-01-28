@@ -68,6 +68,34 @@ const FooterStyles = styled.footer`
   }
 `
 
+const ContactMe = styled.div`
+  h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 200;
+    z-index: -1;
+    overflow: hidden;
+    text-align: center;
+  }
+  h3:before, h3:after {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 51%;
+    height: 1px;
+    content: '\a0';
+    background-color: #444;
+}
+h3:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+span {
+  margin: 0 20px;
+}
+`
+
 const Contact = () => (
   <Layout>
         <SEO title="Contact" />
@@ -76,6 +104,10 @@ const Contact = () => (
                       <Image />
                 </LogoContainer>
                 <TextItems>A BAG SHOULD BE A SCULPTURE BEFORE ANYTHING ELSE</TextItems>
+
+                  <ContactMe>
+                    <h3 className="decorated"><span>Contact Me</span></h3>
+                  </ContactMe>      
                 
                 <form action="#">
                   <FormContainer>
