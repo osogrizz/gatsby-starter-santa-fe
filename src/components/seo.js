@@ -60,9 +60,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          >
-            <link href="https://fonts.googleapis.com/css?family=Raleway|Sacramento" rel="stylesheet" />
-          </Helmet>
+          />
         )
       }}
     />
