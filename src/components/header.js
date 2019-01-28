@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1420;
-  margin: 0 auto;
   height: 65px;
   padding-top: 1rem ;
   font-size: 0.9rem;
@@ -19,6 +18,7 @@ const Container = styled.div`
   
   a {
     margin-right: 20px;
+    margin-left: 20px;
     color: #444;
     text-decoration: none;
   }
