@@ -14,7 +14,10 @@ const Container = styled.div`
   max-width: 1420;
   height: 65px;
   padding-top: 1rem ;
-  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 200;
+  letter-spacing: 1px;;
 
   
   a {
