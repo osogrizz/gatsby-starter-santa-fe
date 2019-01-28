@@ -92,6 +92,7 @@ h3:before {
 }
 
 span {
+  font-family: 'Sacramento', cursive;
   margin: 0 20px;
 }
 `

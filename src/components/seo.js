@@ -60,7 +60,9 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+          <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"></link>
+          </Helmet>
         )
       }}
     />
