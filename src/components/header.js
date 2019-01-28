@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   background-color: rgb(243, 235, 222);
   margin-bottom: 1.45rem;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 `
 const Container = styled.div`
   margin: 0 auto;

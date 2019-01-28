@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 `
 const BagContainer = styled.div`
   margin: 0 auto;

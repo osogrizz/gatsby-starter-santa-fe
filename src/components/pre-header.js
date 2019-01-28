@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   padding-top: .8rem ;
   font-size: 0.9rem;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 `
 
 const PreHeader = () => (
