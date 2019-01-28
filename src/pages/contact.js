@@ -35,7 +35,11 @@ const Btn = styled.button`
   border-radius: 40px;
   border-color: #222;
   padding: 5px;
-  width: 90px;
+  width: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
 `
 const TextArea  = styled.textarea`
   margin-top: 10px;
@@ -74,7 +78,6 @@ const ContactMe = styled.div`
     font-size: 30px;
     font-weight: 200;
     z-index: -1;
-    overflow: hidden;
     text-align: center;
   }
   h3:before, h3:after {
