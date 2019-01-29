@@ -98,6 +98,9 @@ const ContactMe = styled.div`
     font-weight: 200;
     z-index: -1;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    overflow: hidden;
   }
   h3:before, h3:after {
     position: absolute;
