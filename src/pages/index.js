@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import { Link } from 'gatsby'
-import { Spring, config } from 'react-spring'
+// import { Spring, config } from 'react-spring'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
@@ -14,6 +14,12 @@ const Wrapper = styled.div`
   grid-template-columns: auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  
+  h4 {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  }
 `
 const BagContainer = styled.div`
   margin: 0 auto;
@@ -48,25 +54,25 @@ class IndexPage extends Component {
           <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
           <LogoContainer>
-              <Spring config={ config.molasses }
+              {/* <Spring config={ config.molasses }
                 from={{marginLeft: -2000}}
                 to={{marginLeft: 0 }}
               >
               {props => ( <div style={{ paddingBottom: 260}}>
-                            <h1 style={props}>Von</h1>
-                            <h1 style={props}>Ruhtenberg</h1>  
+                            <h1 style={props}>Das</h1>
+                            <h1 style={props}>GrosseLogo</h1>  
                           </div>  
               )}
-              </Spring>
+              </Spring> */}
           </LogoContainer>
 
           <div style={{ paddingTop: `100px`, margin: `0 auto`, maxWidth: `230px`, marginBottom: `1.45rem` }}>
             <Image />
           </div>
 
-          <p>A BAG SHOULD BE A SCULPTURE BEFORE ANYTHING ELSE</p>
+          <h4>Lorem ipsum dolor amet disrupt 3 wolf moon normcore</h4>
 
-          <BagContainer style={{  margin: `0 auto`, maxWidth: `660px`,maxHeight: `500px`, marginBottom: `1.45rem` }}>
+          <BagContainer style={{  margin: `0 auto`, maxWidth: `600px`,maxHeight: `500px`, marginBottom: `1.45rem` }}>
             <BagImage />
           </BagContainer>
 

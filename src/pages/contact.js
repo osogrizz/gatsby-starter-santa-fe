@@ -11,6 +11,31 @@ const Wrapper = styled.div`
   text-align: center;
   max-width: 850px;
   padding-bottom: 60px;
+
+  h5 {
+    font-weight: 150;
+    font-size: .9rem;
+    letter-spacing: 0.8px;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    color: #777;
+    font-size: 16px;
+
+    a {
+      text-decoration: none;
+      color: #777;
+      &:hover {
+        color: rgb(243, 235, 222)
+      }
+    }
+  }
 `
 
 
@@ -43,12 +68,6 @@ const Btn = styled.button`
 `
 const TextArea  = styled.textarea`
   margin-top: 10px;
-`
-
-const TextItems = styled.p`
-  margin-top: 0;
-  padding-top: 0;
-  text-align: center;
 `
 
 const LogoContainer = styled.div`
@@ -107,7 +126,7 @@ const Contact = () => (
                 <LogoContainer>
                       <Image />
                 </LogoContainer>
-                <TextItems>A BAG SHOULD BE A SCULPTURE BEFORE ANYTHING ELSE</TextItems>
+                <h4>Lorem ipsum dolor amet disrupt 3 wolf moon normcore</h4>
 
                   <ContactMe>
                     <h3 className="decorated"><span>Contact Me</span></h3>
@@ -127,16 +146,20 @@ const Contact = () => (
                   </FormContainer>  
                 </form>
 
-                <h4>QUESTIONS OR COMMENTS?</h4>
+                <h5>QUESTIONS OR COMMENTS?</h5>
 
-                <p>Feel free to send me a message. I am available for commissions as well as for
-                   shows. I always love to hear what viewers think of my work. I look forward to
-                  hearing from you.
+                <p>Lorem ipsum dolor amet disrupt 3 wolf moon normcore, keytar ramps lumbersexual
+                  thundercats snackwave church-key cliche blog. Flexitarian venmo tousled banjo
+                  ramps air plant PBR&B. Shaman jianbing mustache craft beer paleo polaroid, pabst
+                  lumbersexual man braid. Gluten-free marfa butcher mustache hot chicken, small
+                  batch occupy raclette vape actually cornhole slow-carb schlitz.
                 </p>
 
-                <h4>VON RUHTENBERG</h4>    
-
-                <p>tel. 310 980 8849</p>
+                <h5>Company Name</h5>    
+                
+                <p>
+                tel.<a href=""> 415 415 4155</a>
+                </p>
                 
             </Wrapper>   
             <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
@@ -144,7 +167,7 @@ const Contact = () => (
             </div>
         <FooterStyles>
             <div>
-              Copyright © {new Date().getFullYear()}, Von Ruhtenberg - All Rights Reserved
+              Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
             </div>
 
             <div style={{ textAlign: 'right', }}>

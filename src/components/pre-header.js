@@ -8,11 +8,20 @@ const Wrapper = styled.div`
   font-size: 0.9rem;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+
+  a {
+      text-decoration: none;
+      color: #444;
+
+      &:hover {
+          color: rgb(243, 235, 222)
+      }
+  }
 `
 
 const PreHeader = () => (
     <Wrapper> 
-        <p>tel 310 980 8849</p>
+        <p>tel <a href="">415 415 4155</a></p>
     </Wrapper>
 )
 
