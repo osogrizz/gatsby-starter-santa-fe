@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'gatsby'
-// import { Spring, config } from 'react-spring'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
@@ -26,25 +25,6 @@ const BagContainer = styled.div`
   border: 8px solid rgb(243, 235, 222);
 `
 
-const LogoContainer = styled.div`
-  margin: 0 auto;
-  margin-top: 25px;
-  padding: 0;
-
-  h1 {
-    font-size: 17vw;
-    transform: scale(1, 1.3);
-  }
-
-  @media (max-width: 400px) {
-    h1 {
-      margin-top: 80px;  
-      transform: scale(1, 2.5)
-    }
-  }
-
-`
-
 
 class IndexPage extends Component {
   render() {
@@ -53,22 +33,11 @@ class IndexPage extends Component {
         <Layout>
           <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-          <LogoContainer>
-              {/* <Spring config={ config.molasses }
-                from={{marginLeft: -2000}}
-                to={{marginLeft: 0 }}
-              >
-              {props => ( <div style={{ paddingBottom: 260}}>
-                            <h1 style={props}>Das</h1>
-                            <h1 style={props}>GrosseLogo</h1>  
-                          </div>  
-              )}
-              </Spring> */}
-          </LogoContainer>
-
-          <div style={{ paddingTop: `100px`, margin: `0 auto`, maxWidth: `230px`, marginBottom: `1.45rem` }}>
-            <Image />
-          </div>
+          <Link to="/">
+            <div style={{ paddingTop: `5px`, margin: `0 auto`, maxWidth: `230px`, marginBottom: `1.45rem` }}>
+              <Image />
+            </div>
+          </Link>
 
           <h4>Lorem ipsum dolor amet disrupt 3 wolf moon normcore</h4>
 

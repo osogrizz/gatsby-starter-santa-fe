@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Image from '../components/image'
@@ -124,7 +124,9 @@ const Contact = () => (
         <SEO title="Contact" />
             <Wrapper>
                 <LogoContainer>
-                      <Image />
+                    <Link to="/">
+                        <Image />
+                    </Link>
                 </LogoContainer>
                 <h4>Lorem ipsum dolor amet disrupt 3 wolf moon normcore</h4>
 

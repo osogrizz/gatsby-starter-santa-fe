@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Van Ruhtenberg`,
-    description: `A display of Von Ruhtenberg handbag designs.`,
+    title: `Company Name`,
+    description: `A display of Company Name products.`,
     author: `Leo Torre leohtor@gmail.com`,
   },
   plugins: [
@@ -27,13 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-starter-santaFe`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#f3ebde`,
         display: `minimal-ui`,
-        icon: `src/images/vRLogo.png`, // This path is relative to the root of the site.
+        icon: `src/images/example-logo.jpeg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
