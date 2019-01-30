@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -28,6 +29,7 @@ const BagContainer = styled.div`
 
 class IndexPage extends Component {
   render() {
+    const { data } = this.props
     return (
       <Wrapper>
         <Layout>
@@ -45,6 +47,16 @@ class IndexPage extends Component {
             <BagImage />
           </BagContainer>
 
+          <div>
+            <Img fluid={data.bag1.fluid}/>
+          </div>
+          <div>
+            <Img fluid={data.bag2.fluid}/>
+          </div>
+          <div>
+            <Img fluid={data.bag3.fluid}/>
+          </div>
+
       </Layout>
     </Wrapper>
     )
@@ -53,3 +65,22 @@ class IndexPage extends Component {
 
 export default IndexPage
 
+export const query = graphql`
+  query GalleryQuery {
+    bag1: imageSharp(fluid: {originalName: {eq: "example1.jpeg"}}) {
+      fluid(maxWidth: 1240) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+    bag2: imageSharp(fluid: {originalName: {eq: "example2.jpeg"}}) {
+      fluid(maxWidth: 1240) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+    bag3: imageSharp(fluid: {originalName: {eq: "example3.jpeg"}}) {
+      fluid(maxWidth: 1240) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }  
+`

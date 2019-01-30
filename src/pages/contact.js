@@ -9,7 +9,7 @@ import SEO from '../components/seo'
 const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
-  max-width: 850px;
+  max-width: 1050px;
   padding-bottom: 60px;
 
   h5 {
