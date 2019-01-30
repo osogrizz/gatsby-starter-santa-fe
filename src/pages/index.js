@@ -98,12 +98,12 @@ export default IndexPage
 
 export const query = graphql`
   query GalleryQuery {
-    bag1: imageSharp(fluid: {originalName: {eq: "example1.jpeg"}}) {
+    bag1: imageSharp(fluid: {originalName: {eq: "example-bag.jpg"}}) {
       fluid(maxWidth: 1240) {
         ...GatsbyImageSharpFluid
       }
     }
-    bag2: imageSharp(fluid: {originalName: {eq: "example2.jpeg"}}) {
+    bag2: imageSharp(fluid: {originalName: {eq: "example-bag.jpg"}}) {
       fluid(maxWidth: 1240) {
         ...GatsbyImageSharpFluid
       }
