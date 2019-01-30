@@ -26,6 +26,23 @@ const BagContainer = styled.div`
   border: 8px solid rgb(243, 235, 222);
 `
 
+const DisplayItem = styled.div`
+  margin: 300px auto;
+`
+
+const FooterStyles = styled.footer`
+  margin: 0 auto;
+  max-width: 950px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 100;
+  }
+`
 
 class IndexPage extends Component {
   render() {
@@ -47,15 +64,29 @@ class IndexPage extends Component {
             <BagImage />
           </BagContainer>
 
-          <div>
+          <DisplayItem>
             <Img fluid={data.bag1.fluid}/>
-          </div>
-          <div>
+          </DisplayItem>
+          
+          <DisplayItem>
             <Img fluid={data.bag2.fluid}/>
-          </div>
-          <div>
+          </DisplayItem>
+
+          <DisplayItem>
             <Img fluid={data.bag3.fluid}/>
-          </div>
+          </DisplayItem>
+
+          <hr/>
+
+          <FooterStyles>
+            <div>
+              Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+            </div>
+
+            <div style={{ textAlign: 'right', }}>
+              <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+            </div>
+        </FooterStyles>
 
       </Layout>
     </Wrapper>
@@ -77,7 +108,7 @@ export const query = graphql`
         ...GatsbyImageSharpFluid
       }
     }
-    bag3: imageSharp(fluid: {originalName: {eq: "example3.jpeg"}}) {
+    bag3: imageSharp(fluid: {originalName: {eq: "example-bag.jpg"}}) {
       fluid(maxWidth: 1240) {
         ...GatsbyImageSharpFluid
       }
