@@ -12,7 +12,16 @@ Kick off your project with this default boilerplate. This starter ships with the
 
  ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-santa-fe)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## 🧐 What's inside?
+
+## A simple elegent theme that derives it's name from one of the included fonts. Use case: A place for artist or designers to display their creations 
+
+ # gatsby-plugin-styled-components
+ # gatsby-plugin-web-font-loader
+
+
 <!-- 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
