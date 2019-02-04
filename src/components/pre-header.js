@@ -14,7 +14,7 @@ const Wrapper = styled.div`
       color: #444;
 
       &:hover {
-          color: rgb(243, 235, 222)
+          color: rgb(243, 235, 222);
       }
   }
 `
