@@ -16,10 +16,10 @@ Kick off your project with this default boilerplate. This starter ships with the
 
 ## 🧐 What's inside?
 
-## A simple elegent theme that derives it's name from one of the included fonts. Use case: A place for artist or designers to display their creations 
+A simple elegent theme that derives it's name from one of the included fonts. Use case: A place for artist or designers to display their creations 
 
- # gatsby-plugin-styled-components
- # gatsby-plugin-web-font-loader
+  gatsby-plugin-styled-components
+  gatsby-plugin-web-font-loader
 
 
 <!-- 
