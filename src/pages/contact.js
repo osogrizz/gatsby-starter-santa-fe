@@ -51,7 +51,7 @@ const FormContainer = styled.div`
 const InputStyles = styled.input`
   height: 50px;
   margin: 10px 0;
-
+  padding: 10px;
 `
 
 const Btn = styled.button`
@@ -68,6 +68,7 @@ const Btn = styled.button`
 `
 const TextArea  = styled.textarea`
   margin-top: 10px;
+  padding: 10px;
 `
 
 const LogoContainer = styled.div`
